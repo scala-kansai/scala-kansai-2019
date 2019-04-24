@@ -1,0 +1,12 @@
+{
+  "name": "scala-kansai-2019",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.26.4"
+  },
+  "scripts": {
+    "start": "browser-sync start --server --files \"*\""
+  }
+}
