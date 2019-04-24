@@ -4,6 +4,9 @@ html, body {
   font-family: "Yu Gothic Medium","YuGothic Medium", YuGothic, "Yu Gothic","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
+body {
+  min-width: 900px;
+}
 
 #header {
   margin: 2rem 0 0rem;
