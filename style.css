@@ -53,6 +53,16 @@ body {
   margin: 4rem 0;
 }
 
+#main .event-notice {
+  border: 2px solid #000;
+}
+
+#main .cfp {
+  margin-right: -2rem;
+  margin-left: -2rem;
+  background: #fff;
+  padding: 2rem;
+}
 
 #footer {
   background: #73533b;
@@ -67,4 +77,19 @@ body {
 #footer .old a {
   color: white;
   margin: 0 1rem;
+}
+
+.button {
+  display: block;
+  text-decoration: none;
+  background: #e87e73;
+  color: white;
+  width: fit-content;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 10px
+  ;
+}
+.button:hover {
+  background: #c82e53;
 }
