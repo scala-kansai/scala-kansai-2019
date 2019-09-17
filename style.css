@@ -93,3 +93,57 @@ body {
 .button:hover {
   background: #c82e53;
 }
+
+.conference-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.conference-content > div {
+  text-align: start;
+  background-color: white;  
+  padding: 0 24px;
+  padding-bottom: 24px;
+  width: 45%;
+}
+
+.conference-content a {
+  display: block;
+  width: max-content;
+  text-decoration: none;
+  background: #DE3422;
+  color: white;
+  padding: 16px;
+  border-radius: 8px;  
+}
+
+.conference-content a:hover {
+  text-decoration-line: underline;
+}
+
+
+table{
+  width: 100%;
+  border-collapse: collapse;  
+}
+
+table tr{
+  border-bottom: solid 2px white;
+}
+
+table tr:last-child{
+  border-bottom: none;
+}
+
+table th{
+  position: relative;
+  text-align: left;  
+  background-color: #73533A;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+table td {
+  border: solid #E5E5E5;
+}
