@@ -121,29 +121,99 @@ body {
   text-decoration-line: underline;
 }
 
+/* time table */
 
-table{
-  width: 100%;
-  border-collapse: collapse;  
-}
-
-table tr{
-  border-bottom: solid 2px white;
-}
-
-table tr:last-child{
-  border-bottom: none;
-}
-
-table th{
+.time-table {
   position: relative;
-  text-align: left;  
-  background-color: #73533A;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
+  width: 100%;
+  overflow-x: scroll;
+}
+.track {
+  width: 1024px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
-table td {
-  border: solid #E5E5E5;
+.cfp table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
 }
+.track div h5 {
+  font-size: 1.0em;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.track div p {
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.track table tbody tr th:nth-of-type(1) {
+}
+.track table tbody tr td:nth-of-type(1) {
+  width: 400px;
+}
+.track table tbody tr th:nth-of-type(2) {
+  width: 10px;
+}
+.track table tbody tr th:nth-of-type(3) {
+}
+.track table tbody tr td:nth-of-type(1) {
+  width: 400px;
+}
+
+.track table thead tr th {
+  padding: 15px;
+  padding-left: 50px;
+}
+.track table tbody tr th.space {
+  background-color: #FFF;
+}
+.track table tbody tr.break td {
+  font-weight: bold;
+}
+.track table tbody tr th {
+  font-size: 0.8em;
+  padding: 10px;
+  vertical-align: top;
+}
+.track table tbody tr td {
+  padding: 10px;
+}
+
+/* track-1 */
+.track table thead tr th.track-1 {
+  background-color: #E37E67;
+  color: #FFF;
+}
+.track table tbody tr.break .track-1 {
+  background-color: #DD7156;
+  color: #FFF;
+}
+.track table tbody tr.break th.track-1 {
+  background-color: #BB665C;
+}
+.track table tbody tr th.track-1 {
+  background-color: #F8E9E7;
+}
+
+/* track-2 */
+.track table thead tr th.track-2 {
+  background-color: #66B794;
+  color: #FFF;
+}
+.track table tbody tr.break .track-2 {
+  background-color: #46A17F;
+  color: #FFF;
+}
+.track table tbody tr.break th.track-2 {
+  background-color: #438C7D;
+}
+.track table tbody tr th.track-2 {
+  background-color: #D8ECDF;
+}
+

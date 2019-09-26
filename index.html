@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Scala関西Summit 2019</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
   <header id="header">
@@ -48,97 +49,177 @@
 
     <article class="cfp">
       <h2>タイムテーブル</h2>
-      <table>
-        <tr>
-          <td></td>
-          <th>トラック1</th>
-          <th>トラック2</th>
-        </tr>
-
-        <tr>
-          <th>12:00 ~ 12:50</th>
-          <td colspan="2">開場</td>
-        </tr>
-
-        <tr>
-          <th>12:50 ~ 13:00</th>
-          <td colspan="2">オープニング</td>
-        </tr>
-
-        <tr>
-          <th>13:00 ~ 13:45</th>
-          <td>
-            Path dependent types を利用した軽量Clean Architecture の紹介
-            <br>中村 学(がくぞ)
-          </td>
-          <td rowspan="3">ハンズオン</td>
-        </tr>
-        <tr>
-          <th>13:45 ~ 14:00</th>
-          <td>休憩</td>
-        </tr>
-
-        <tr>
-          <th>14:00 ~ 14:45</th>
-          <td>
-            Java 5.0時代の非同期処理技術から学び直すScala/Java非同期処理
-            <br>リチャード 伊真岡
-          </td>
-        </tr>
-        <tr>
-          <th>14:45 ~ 15:00</th>
-          <td colspan="2">休憩</td>
-        </tr>
-
-        <tr>
-          <th>15:00 ~ 15:45</th>
-          <td>
-            Chatworkでリアクション機能をリリースした話
-            <br>勝野 徳
-          </td>
-          <td>
-            Scala.jsでGoogle Cloud Functionsを利用する前に知りたかったこと
-            <br>よしだ
-          </td>
-        </tr>
-        <tr>
-          <th>15:45 ~ 16:00</th>
-          <td colspan="2">休憩</td>
-        </tr>
-
-        <tr>
-          <th>16:00 ~ 16:45</th>
-          <td>
-              資産運用スタートアップの開発で採用した、PlayによるClean Arcitectureでの設計・開発事例
-            <br>若松 慶信
-          </td>
-          <td>
-            Scalaで圏論ﾁｮｯﾄ学ぶ
-            <br>谷口 慶一郎
-          </td>
-        </tr>
-        <tr>
-          <th>16:45 ~ 17:00</th>
-          <td colspan="2">休憩</td>
-        </tr>
-
-        <tr>
-          <th>17:00 ~ 17:45</th>
-          <td>
-            FOLIO のマイクロサービス in Action
-            <br>村上拓也 (むらみん)
-          </td>
-          <td>
-            Scala における Monad って何だろう？
-            <br>Naoki Aoyama (aoiroaoino)
-          </td>
-        </tr>
-        <tr>
-          <th>17:45 ~ 18:00</th>
-          <td colspan="2">クロージング</td>
-        </tr>
-
-      </table>
+      <div class="time-table">
+        <div class="track">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2" class="track-1">トラック1</th>
+                <th class="space"></th>
+                <th colspan="2" class="track-2">トラック2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="session">
+                <th class="track-1">12:50</th>
+                <td class="track-1">オープニング</td>
+                <th class="space"></th>
+                <th class="track-2">12:50</th>
+                <td class="track-2">オープニング</td>
+              </tr>
+              <tr class="break">
+                <th class="track-1"></th>
+                <td class="track-1"></td>
+                <th class="space"></th>
+                <th class="track-2"></th>
+                <td class="track-2"></td>
+              </tr>
+              <tr class="session">
+                <th class="track-1">13:00</th>
+                <td class="track-1">
+                  <div>
+                    <h5>Path dependent types を利用した軽量Clean Architecture の紹介</h5>
+                    <p><i class="fas fa-microphone"></i> 中村 学(がくぞ)</p>
+                  </div>
+                </td>
+                <th class="space"></th>
+                <th class="track-2" rowspan="3">13:00</th>
+                <td class="track-2" rowspan="3">
+                  <div>
+                    <h5>ハンズオン</h5>
+                    <p></p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="break">
+                <th class="track-1">13:45</th>
+                <td class="track-1">
+                  休憩 (15分)
+                </td>
+                <th class="space"></th>
+              </tr>
+              <tr class="session">
+                <th class="track-1">14:00</th>
+                <td class="track-1">
+                  <div>
+                    <h5>Java 5.0時代の非同期処理技術から学び直すScala/Java非同期処理</h5>
+                    <p><i class="fas fa-microphone"></i> リチャード 伊真岡</p>
+                  </div>
+                </td>
+                <th class="space"></th>
+              </tr>
+              <tr class="break">
+                <th class="track-1">14:45</th>
+                <td class="track-1">
+                  休憩 (15分)
+                </td>
+                <th class="space"></th>
+                <th class="track-2">14:45</th>
+                <td class="track-2">
+                  休憩 (15分)
+                </td>
+              </tr>
+              <tr class="session">
+                <th class="track-1">15:00</th>
+                <td class="track-1">
+                  <div>
+                    <h5>Chatworkでリアクション機能をリリースした話</h5>
+                    <p><i class="fas fa-microphone"></i> 勝野 徳</p>
+                  </div>
+                </td>
+                <th class="space"></th>
+                <th class="track-2">15:00</th>
+                <td class="track-2">
+                  <div>
+                    <h5>Scala.jsでGoogle Cloud Functionsを利用する前に知りたかったこと</h5>
+                    <p><i class="fas fa-microphone"></i> よしだ</p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="break">
+                <th class="track-1">15:45</th>
+                <td class="track-1">
+                  休憩 (15分)
+                </td>
+                <th class="space"></th>
+                <th class="track-2">15:45</th>
+                <td class="track-2">
+                  休憩 (15分)
+                </td>
+              </tr>
+              <tr class="session">
+                <th class="track-1">16:00</th>
+                <td class="track-1">
+                  <div>
+                    <h5>資産運用スタートアップの開発で採用した、PlayによるClean Arcitectureでの設計・開発事例</h5>
+                    <p><i class="fas fa-microphone"></i> 若松 慶信</p>
+                  </div>
+                </td>
+                <th class="space"></th>
+                <th class="track-2">16:00</th>
+                <td class="track-2">
+                  <div>
+                    <h5>Scalaで圏論ﾁｮｯﾄ学ぶ</h5>
+                    <p><i class="fas fa-microphone"></i> 谷口 慶一郎</p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="break">
+                <th class="track-1">16:45</th>
+                <td class="track-1">
+                  休憩 (15分)
+                </td>
+                <th class="space"></th>
+                <th class="track-2">16:45</th>
+                <td class="track-2">
+                  休憩 (15分)
+                </td>
+              </tr>
+              <tr class="session">
+                <th class="track-1">17:00</th>
+                <td class="track-1">
+                  <div>
+                    <h5>FOLIO のマイクロサービス in Action</h5>
+                    <p><i class="fas fa-microphone"></i> 村上拓也 (むらみん)</p>
+                  </div>
+                </td>
+                <th class="space"></th>
+                <th class="track-2">17:00</th>
+                <td class="track-2">
+                  <div>
+                    <h5>Scala における Monad って何だろう？</h5>
+                    <p><i class="fas fa-microphone"></i> Naoki Aoyama (aoiroaoino)</p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="break">
+                <th class="track-1"></th>
+                <td class="track-1"></td>
+                <th class="space"></th>
+                <th class="track-2"></th>
+                <td class="track-2"></td>
+              </tr>
+              <tr class="session">
+                <th class="track-1">17:45</th>
+                <td class="track-1">
+                  <div>
+                    <h5>クロージング</h5>
+                    <p></p>
+                  </div>
+                </td>
+                <th class="space"></th>
+                <th class="track-2">17:45</th>
+                <td class="track-2">
+                  <div>
+                    <h5>クロージング</h5>
+                    <p></p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </article>
 
     <article class="location">
