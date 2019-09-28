@@ -120,6 +120,9 @@
   margin: 0;
   margin-bottom: 10px;
 }
+.track div h5 a {
+  color: inherit;
+}
 .track div p {
   font-size: 0.9em;
   margin: 0;
