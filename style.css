@@ -1,26 +1,14 @@
-html, body {
-  margin: 0;
-  background: #ffebb8;
-  font-family: "Yu Gothic Medium","YuGothic Medium", YuGothic, "Yu Gothic","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-}
-
-body {
-  min-width: 900px;
-}
-
-#header {
-  margin: 2rem 0 0rem;
-  text-align: center;
-}
-.face {
-  width: 50%;
-}
-
 #main {
   text-align: center;
   color: #502516;
   padding: 0 2rem;
+  padding-top: 60px;
 }
+
+.face {
+  width: 50%;
+}
+
 .big-news {
   background: white;
   width: 60%;
@@ -62,21 +50,6 @@ body {
   margin-left: -2rem;
   background: #fff;
   padding: 2rem;
-}
-
-#footer {
-  background: #73533b;
-  color: white;
-  padding: 3rem;
-  text-align: center;
-}
-
-#footer .old {
-  margin: 1rem 0;
-}
-#footer .old a {
-  color: white;
-  margin: 0 1rem;
 }
 
 .button {

@@ -1,0 +1,149 @@
+#main {
+  text-align: center;
+  color: #502516;
+  padding: 0;
+  padding-top: 60px;
+}
+
+
+.p-session_header {
+  background-color: #FFF;
+}
+
+.p-session_logo {
+  padding: 20px;
+  width: 60%;
+  max-width: 300px;
+}
+
+.p-session {
+  padding: 40px 0 60px;
+  background: #ffebb8;
+}
+
+.c-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 980px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.p-session_heading {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+  font-size: 28.8px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.p-session_sessions {
+  margin-bottom: 60px;
+}
+
+.p-session_sessions .list {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.p-session_sessions .listItem {
+  padding: 50px 0 0;
+
+  margin-bottom: 30px;
+  background-color: #FFF;
+  position: relative;
+}
+
+.p-session_sessions .listItem .inner {
+  margin: 0 auto 60px;
+
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto 30px;
+  padding: 0 25px;
+  display: inline-block;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.p-session_sessions .listItem .status {
+  margin-bottom: 5px;
+}
+
+.p-session_sessions .listItem .level.high {
+  background-color: #d64f2c;
+}
+
+.p-session_sessions .listItem .level {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 3px 5px;
+  color: #fff;
+  border-radius: 4px;
+  background: #ccc;
+}
+
+.p-session_sessions .listItem .title {
+  padding-bottom: .1em;
+
+  display: block;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+  width: 100%;
+  text-align: left;
+  font-size: 36.8px;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #7f5b5a;
+}
+
+.p-session_sessions .listItem .description {
+  display: block;
+  margin-bottom: 40px;
+  width: 100%;
+  font-size: 25.6px;
+  font-size: 1.6rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.p-session_sessions .listItem .target {
+  margin-bottom: 20px;
+}
+
+.p-session_sessions .listItem .targetTitle {
+  font-weight: 700;
+}
+
+.p-session_sessions .listItem .speaker {
+  border-top: 1px dotted #7f5b5a;
+  padding: 30px 0 0;
+}
+
+.p-session_sessions .row {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.p-session_sessions .listItem .speaker .icon {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.p-session_sessions .listItem .speaker .name {
+  font-size: 28.8px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
