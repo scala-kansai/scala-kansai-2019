@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Scala関西Summit 2019</title>
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./sessions.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <header id="header">
+    <div class="row">
+      <div class="col-auto">
+        <a href="/">
+          <img class="l-header_logo" src="./assets/logo.png" />
+        </a>
+      </div>
+      <div class="col l-header_nav">
+        <nav class="l-header_links">
+          <a href="/sessions.html">SESSION</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div id="main">
+    <section>
+      <div class="p-session_header">
+        <a href="/">
+          <img src="./assets/logo.png" class="p-session_logo">
+        </a>
+      </div>
+      <div class="p-session">
+        <div class="c-container">
+          <h3 class="p-session_heading">セッション一覧</h3>
+          <div class="p-session_sessions">
+
+            <div id="中村 学(がくぞ)" class="list">
+              <div class="listItem">
+                <div class="inner">
+                  <p target="_blank" class="title">Path dependent types を利用した軽量Clean Architecture の紹介</p>
+                  <div class="description">
+                    <p>Scalaではドメインを表現するコードから技術詳細を分離するためのアプローチが様々提案されています。 Freeモナドを使って実現する方法や tagless-final を使う方法など近年のScala関西Summitでも紹介されていました。<br>  これらの方法は柔軟性もあり便利な反面、モナド等の高度な概念を理解していないとコード自体も理解するのが難しいという問題も抱えています。<br>  このセッションでは、ひとつのPath Dependent Typesを導入することで古典的なDIとインターフェイス/実装の分離とでドメインコードから技術詳細を分離する手法について紹介します。</p>
+                  </div>
+                  <div class="target">
+                    <p class="targetTitle">こんな人にオススメ</p>
+                    <span>Scalaで簡単なClean Architectureを実現する方法に興味のある人</span>
+                  </div>
+                  <div class="speaker">
+                    <div class="row">
+                      <div class="col-auto">
+                        <img src="https://2018.scala-kansai.org/speakers/nakamura_2.jpg" alt="" class="icon">
+                      </div>
+                      <div class="col">
+                        <div class="name">中村 学(がくぞ)</div>
+                        <p class="profile">株式会社Tech to Value 代表取締役。Opt Technologies技術顧問。株式会社エフ・コード CTO。 Scalaを中心にWeb開発やITシステムコンサルティングを行っています。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end list -->
+
+            <div id="リチャード 伊真岡" class="list">
+              <div class="listItem">
+                <div class="inner">
+                  <p target="_blank" class="title">Java 5.0時代の非同期処理技術から学び直すScala/Java非同期処理</p>
+                  <div class="description">
+                    <p>
+このセッションはJava/Scalaにおける非同期処理ツールの歴史を振り返り理解を深めることで楽しいと感じてもらうことを目指します。非同期処理は難しくつらい一方で知的な探究心を刺激してくれる分野です。<br>
+<br>
+現代のプログラミングは非同期処理を行うことが当たり前になってきたと言えるかもしれません。Scalaにも非同期処理を書くことを助けてくれるライブラリがたくさんあります。例を上げればScala標準のFutureもあればMonix、Cats Effect、ZIOなど。<br>
+<br>
+しかしツールやライブラリが多岐にわたるため、それらのツールの抽象度が高いためチュートリアルに従ってコードを書くことはできるものの中で何が起こっているのかわからない人もいるかと思います。<br>
+<br>
+セッションの最初ではJava 5.0時代までさかのぼってJava Memory Modelを始めとした当時の非同期処理技術から解説していきます。これは抽象度が低く具体性の高い処理から学ぶのが理解の手助けになると私は考えているからです。そして後の時代に登場した数多くの非同期処理技術に触れ、時代が進むとともにどういった背景で新しい技術が登場したか、どのように前の時代の技術を土台にしているのかを解説していきます。<br>
+<br>
+発表の中でなにか一つ非同期処理に関して興味を持ってもらえる項目があれば嬉しいです。興味を持ってもらえる項目があれば豊富な文献を提示していますのでそこから自身で学んでいただけると思います。<br>
+<br>
+今回お話を予定する内容には以下の項目を含む予定です<br>
+<br>
+- 非同期処理技術変遷の年表<br>
+- Thread, lock, synchronized<br>
+- Atomicクラス, volatile変数、Thread-safe collections<br>
+- ExecutorService<br>
+- callback hellとChaining、Scala Future<br>
+- RxJavaとストリーム処理<br>
+- immutableオブジェクト<br>
+- Akka ActorとThread間共有オブジェクト、トランザクションスクリプト<br>
+- Blocking vs. Non-blocking (非同期だがブロッキングな処理について)<br>
+- 未来の技術...Java fiber, etc
+</p>
+                  </div>
+                  <div class="target">
+                    <p class="targetTitle">こんな人にオススメ</p>
+                    <span>非同期処理に苦手意識をもっているひと、苦手・得意を問わずもっと非同期処理への理解を深めたい人</span>
+                  </div>
+                  <div class="speaker">
+                    <div class="row">
+                      <div class="col-auto">
+                        <img src="https://secure.gravatar.com/avatar/14bfbc98a7d5ed3574be08f6b176ce70?s=200" alt="" class="icon">
+                      </div>
+                      <div class="col">
+                        <div class="name">リチャード 伊真岡</div>
+                        <p class="profile">Scalaプログラマです。Adobe After Effectsが好きなExplainer video作製者でもあります。マーベリック株式会社で技術広報として働いています。<br>
+                        - Twitter: <a target="_blank" href="https://twitter.com/richardimaokajp">@RichardImaokaJP</a><br>
+                        - GitHub: <a target="_blank" href="https://github.com/richardimaoka">richardimaoka</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end list -->
+
+            <div id="勝野 徳" class="list">
+              <div class="listItem">
+                <div class="inner">
+                  <p target="_blank" class="title">Chatworkでリアクション機能をリリースした話</p>
+                  <div class="description">
+                    <p>Chatworkでは7月にリアクション機能をリリースしました。<br>
+リアクションは機能としては比較的シンプルですが、非機能要件も重要でそのための設計や負荷試験にも多くの時間を費やしました。<br>
+今回のScalaプログラムではAkka HTTPやMonixを使用しましたが、それらを使ってScalaでどのように実装したのか、どのようなアーキテクチャを採用したのか、どのように性能を改善していったのかなどを紹介したいと思います。</p>
+                  </div>
+                  <div class="target">
+                    <p class="targetTitle">こんな人にオススメ</p>
+                    <span>Scalaプロダクトの実例に興味がある方</span>
+                  </div>
+                  <div class="speaker">
+                    <div class="row">
+                      <div class="col-auto">
+                        <img src="" alt="" class="icon">
+                      </div>
+                      <div class="col">
+                        <div class="name">勝野 徳</div>
+                        <p class="profile">Chatwork株式会社に2016年入社。入社以来PHPを書いてきましたが、最近Scalaを書くようになりました</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end list -->
+
+            <div id="若松 慶信" class="list">
+              <div class="listItem">
+                <div class="inner">
+                  <p target="_blank" class="title">資産運用スタートアップの開発で採用した、PlayによるClean Arcitectureでの設計・開発事例</p>
+                  <div class="description">
+                    <p>クラウドポートで手がけているFundsは、貸付ファンドという形の新しい投資機会を提供する、資産運用サービスです。<br>
+<br>
+Fundsの開発では、スタートアップとして要求されるスピードに加え、サービスの成長にも対応できるシステムの柔軟性、金融サービスならではの複雑なドメイン固有の要件など、さまざまな課題が存在します。<br>
+<br>
+少人数のチームにおいて、開発段階の開発効率とサービスの成長に耐えうる柔軟性を実現するため、FundsではScala + Playを採用、またClean Architectureを適用したMonolithなアプリケーションとして設計・開発をしています。<br>
+<br>
+本セッションでは、Fintechスタートアップとしての開発戦略に触れつつ、Scalaを活用してどのような設計・開発指針を採用し、開発しているかについての具体的事例をお話します。</p>
+                  </div>
+                  <div class="target">
+                    <p class="targetTitle">こんな人にオススメ</p>
+                    <span>Scalaをこれから業務で採用しようとしている方</span>
+                  </div>
+                  <div class="speaker">
+                    <div class="row">
+                      <div class="col-auto">
+                        <img src="https://avatars3.githubusercontent.com/u/787874" alt="" class="icon">
+                      </div>
+                      <div class="col">
+                        <div class="name">若松 慶信</div>
+                        <p class="profile">業務では2015年頃よりScalaを利用。現職のクラウドポートには2016年の創業時より所属し、同社が運営するFundsにおいては、フロントエンド・バックエンド双方のアーキテクチャ設計・開発などを担当しています。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end list -->
+
+            <div id="村上拓也 (むらみん)" class="list">
+              <div class="listItem">
+                <div class="inner">
+                  <p target="_blank" class="title">FOLIO のマイクロサービス in Action</p>
+                  <div class="description">
+                    <p>FOLIO の証券システムは 24個 (2019/08/26 現在) のサービスによるマイクロサービスで構成されており、その殆どが Finagle の上に実装されています。<br>
+<br>
+そんな FOLIO の証券システムは、2017年7月のβサービス開始から、マイクロサービス単体の扱い方も、システム全体の構成についても自分たちのベストプラクティスをアップデートしながら進化を重ねています。<br>
+<br>
+このセッションでは、2019年現在の FOLIO がどのようにマイクロサービスを設計/開発/運用しているのか、これまでの苦労や今後解決したい課題などについてご紹介しようと思っています。<br>
+<br>
+取り上げるトピックは、各マイクロサービスを構成する技術スタックやそれらを効率よく扱う上での工夫、レポジトリ内のレイヤ分割、マイクロサービスの切り方、運用プラクティスなどを予定しています。</p>
+                  </div>
+                  <div class="target">
+                    <p class="targetTitle">こんな人にオススメ</p>
+                    <span>マイクロサービスによるシステム構築を検討していたり、実践していて事例を聞いてみたい人。</span>
+                  </div>
+                  <div class="speaker">
+                    <div class="row">
+                      <div class="col-auto">
+                        <img src="./assets/murakami.jpg" alt="" class="icon">
+                      </div>
+                      <div class="col">
+                        <div class="name">村上拓也 (むらみん)</div>
+                        <p class="profile">シンプレクス、サイバーエージェント アドテクスタジオを経て、2018年2月より FOLIO にジョイン。<br>
+FOLIO では、テーマ投資プロダクトの商品管理、参照データ配信、顧客資産参照などの API 開発を行うバックエンドシステムエンジニアをしています。<br>
+<br>
+<a target="_blank" href="https://twitter.com/mura_mi">https://twitter.com/mura_mi</a><br>
+<a target="_blank" href="https://github.com/mura-mi">https://github.com/mura-mi</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end list -->
+
+            <div id="よしだ" class="list">
+              <div class="listItem">
+                <div class="inner">
+                  <p target="_blank" class="title">Scala.jsでGoogle Cloud Functionsを利用する前に知りたかったこと</p>
+                  <div class="description">
+                    <p>Function as a Serviceの中にはJVMで動かせる環境を提供してるサービスが増えてきました。 しかし、JVMが起動するまでの時間がかかるといった他の言語とは違ったデメリットが見えてきました。 また、私が利用している <a target="_blank" href="https://cloud.google.com">Google Cloud Platform</a> のFaaSである <a target="_blank" href="https://cloud.google.com/functions/">Google Cloud Functions</a> ではJVMで動かせる環境は提供されていません。 そこで、JavaScriptへ変換してくれるAltJSである <a target="_blank" href="https://www.scala-js.org/">Scala.js</a> を利用してGoogle Cloud Functionsで動かす方法を紹介します。</p>
+                  </div>
+                  <div class="target">
+                    <p class="targetTitle">こんな人にオススメ</p>
+                    <span>Scala.jsに興味がある人</span>
+                  </div>
+                  <div class="speaker">
+                    <div class="row">
+                      <div class="col-auto">
+                        <img src="https://avatars2.githubusercontent.com/u/623724?s=460&v=4" alt="" class="icon">
+                      </div>
+                      <div class="col">
+                        <div class="name">よしだ</div>
+                        <p class="profile">2019年7月に、データエンジニア(自称)からバックエンドエンジニアへ転職しました。<br>
+その他に、ScalaMatsuriやTDDBCにてコミュニティ活動をしています。<br>
+<br>
+- twitter: <a target="_blank" href="https://twitter.com/grimrose">@grimrose</a><br>
+- github: <a target="_blank" href="https://github.com/grimrose">grimrose</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end list -->
+
+            <div id="谷口 慶一郎" class="list">
+              <div class="listItem">
+                <div class="inner">
+                  <p target="_blank" class="title">Scalaで圏論ﾁｮｯﾄ学ぶ</p>
+                  <div class="description">
+                    <p>関数型の世界に触れていると一度は目にする圏論。<br>
+しかし、圏論について調べてみるとなにを言っているのか全くわからない・・・難しい・・・<br>
+そこで本発表では、圏論の様々な概念をScalaでの実装を通して眺めてみます。<br>
+- そもそも圏って？合成って？<br>
+- Monoid？Monad？<br>
+みたいなことを話します。</p>
+                  </div>
+                  <div class="target">
+                    <p class="targetTitle">こんな人にオススメ</p>
+                    <span>圏論学んでみたけど心が折れた人、圏論に触れてみたい人</span>
+                  </div>
+                  <div class="speaker">
+                    <div class="row">
+                      <div class="col-auto">
+                        <img src="./assets/taniguchi.jpg" alt="" class="icon">
+                      </div>
+                      <div class="col">
+                        <div class="name">谷口 慶一郎</div>
+                        <p class="profile">Scala歴2年目、お仕事で広告配信システムのバックエンドをやっています。<br>
+                        GitHub: <a target="_blank" href="https://github.com/taniTk">https://github.com/taniTk</a><br>
+Twitter: @ravineport</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end list -->
+
+            <div id="Naoki Aoyama (aoiroaoino)" class="list">
+              <div class="listItem">
+                <div class="inner">
+                  <p target="_blank" class="title">Scala における Monad って何だろう？</p>
+                  <div class="description">
+                    <p>結局 Monad ってなんでしょう？ 象？デザインパターン？型クラス？それとも単なる自己関手の圏におけるモノイド対象？  本セッションでは理論よりも Scala における実態/実装を重点的にお話し、より Monad を身近に感じてもらえるようなお話をしようと思います。</p>
+                  </div>
+                  <div class="target">
+                    <p class="targetTitle">こんな人にオススメ</p>
+                    <span>Scala における Monad が何なのか、気になる人</span>
+                  </div>
+                  <div class="speaker">
+                    <div class="row">
+                      <div class="col-auto">
+                        <img src="https://avatars0.githubusercontent.com/u/2589034?s=460&v=4" alt="" class="icon">
+                      </div>
+                      <div class="col">
+                        <div class="name">Naoki Aoyama (aoiroaoino)</div>
+                        <p class="profile">株式会社セプテーニ・オリジナルのエンジニア。<br>
+現在はマンガアプリ「GANMA!」のバックエンドシステムの開発を担当している。<br>
+エンジニアイベントでの登壇や、書籍『実践Scala入門』（技術評論社）の執筆にも携わる。<br>
+Twitter, GitHub: @aoiroaoino</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- end list -->
+
+
+
+          </div><!-- /p-session_sessions -->
+        </div><!-- /c-container -->
+      </div><!-- /p-session -->
+    </section>
+  </div>
+  <footer id="footer">
+    <div>
+      copyright © 2019 Scala関西ユーザーグループ All Rights Reserved.<br />
+      Japan Scala Association, Inc.
+    </div>
+    <div class="old">
+      <a target="_blank" href="https://2018.scala-kansai.org">2018</a>
+      <a target="_blank" href="http://summit.scala-kansai.org/2017/index.html">2017</a>
+      <a target="_blank" href="http://summit.scala-kansai.org/2016/index.html">2016</a>
+      <a target="_blank" href="http://summit.scala-kansai.org/2015/index.html">2015</a>
+    </div>
+  </footer>
+</body>
+</html>
