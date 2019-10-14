@@ -98,8 +98,7 @@
   padding-bottom: 0;
   width: 100%;
   text-align: left;
-  font-size: 36.8px;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #7f5b5a;
 }
@@ -108,8 +107,7 @@
   display: block;
   margin-bottom: 40px;
   width: 100%;
-  font-size: 25.6px;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
