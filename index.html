@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta property="og:title"        content="Scala関西Summit 2019" />
+  <meta property="og:type"         content="website" />
+  <meta property="og:description"  content="プログラミング言語 Scala をテーマとした、関西で最大級の技術カンファレンス開催！2019年10月26日(土)・10月27日(日)の2日間" />
+  <meta property="og:url"          content="https://2019.scala-kansai.org/" />
+  <meta property="og:image"        content="https://2019.scala-kansai.org/assets/ogp.png" />
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:url"         content="https://2019.scala-kansai.org/" />
+  <meta name="twitter:title"       content="Scala関西Summit 2019" />
+  <meta name="twitter:description" content="プログラミング言語 Scala をテーマとした、関西で最大級の技術カンファレンス開催！2019年10月26日(土)・10月27日(日)の2日間" />
+  <meta name="twitter:image"       content="https://2019.scala-kansai.org/assets/keyvisual.png" />
   <title>Scala関西Summit 2019</title>
-  <link rel="stylesheet" href="./style.css">  
+  <link rel="stylesheet" href="./base.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
   <header id="header">
-    <img class="face" src="./assets/logo.png" />
+    <div class="row">
+      <div class="col-auto">
+        <a href="/">
+          <img class="l-header_logo" src="./assets/logo.png" />
+        </a>
+      </div>
+      <div class="col l-header_nav">
+        <nav class="l-header_links">
+          <a href="/sessions.html">SESSION</a>
+        </nav>
+      </div>
+    </div>
   </header>
   <div id="main">
+    <img class="face" src="./assets/keyvisual.png" />
     <div class="big-news">
       <h1>
         関西最大級 Scalaカンファレンス<br />
@@ -40,7 +64,7 @@
       <div>
         <h2>Day2 アンカンファレンス</h2>
         <p>
-          アンカンファレンスは、参加者によって作り上げる1日となります。 事前に用意されたプログラムはなく、当日、イベント参加者全員でその日に何をするかを決めます。 初日のセッションを聴いて、こういうところが気になった、わからないことを教えてほしい、セッションにはなかったこのテーマについて話ができますなど、ぜひ皆さんのやりたいことを発表してください。 
+          アンカンファレンスは、参加者によって作り上げる1日となります。 事前に用意されたプログラムはなく、当日、イベント参加者全員でその日に何をするかを決めます。 初日のセッションを聴いて、こういうところが気になった、わからないことを教えてほしい、セッションにはなかったこのテーマについて話ができますなど、ぜひ皆さんのやりたいことを発表してください。
         </p>
         <a href="https://skug.connpass.com/event/147047/">2日目に参加する！</a>
       </div>
@@ -48,97 +72,177 @@
 
     <article class="cfp">
       <h2>タイムテーブル</h2>
-      <table>
-        <tr>
-          <td></td>
-          <th>トラック1</th>
-          <th>トラック2</th>        
-        </tr>
-
-        <tr>
-          <th>12:00 ~ 12:50</th>
-          <td colspan="2">開場</td>
-        </tr>
-
-        <tr>
-          <th>12:50 ~ 13:00</th>
-          <td colspan="2">オープニング</td>
-        </tr>
-
-        <tr>
-          <th>13:00 ~ 13:45</th>
-          <td>
-            Path dependent types を利用した軽量Clean Architecture の紹介
-            <br>中村 学(がくぞ)
-          </td>
-          <td rowspan="3">ハンズオン</td>
-        </tr>
-        <tr>
-          <th>13:45 ~ 14:00</th>
-          <td>休憩</td>
-        </tr>
-
-        <tr>
-          <th>14:00 ~ 14:45</th>
-          <td>
-            Java 5.0時代の非同期処理技術から学び直すScala/Java非同期処理
-            <br>リチャード 伊真岡
-          </td>          
-        </tr>
-        <tr>
-          <th>14:45 ~ 15:00</th>
-          <td colspan="2">休憩</td>
-        </tr>
-
-        <tr>
-          <th>15:00 ~ 15:45</th>
-          <td>
-            Chatworkでリアクション機能をリリースした話
-            <br>勝野 徳
-          </td>
-          <td>
-            Scala.jsでGoogle Cloud Functionsを利用する前に知りたかったこと
-            <br>よしだ
-          </td>
-        </tr>
-        <tr>
-          <th>15:45 ~ 16:00</th>
-          <td colspan="2">休憩</td>
-        </tr>
-
-        <tr>
-          <th>16:00 ~ 16:45</th>
-          <td>
-              資産運用スタートアップの開発で採用した、PlayによるClean Arcitectureでの設計・開発事例
-            <br>若松 慶信
-          </td>
-          <td>
-            Scalaで圏論ﾁｮｯﾄ学ぶ
-            <br>谷口 慶一郎
-          </td>
-        </tr>
-        <tr>
-          <th>16:45 ~ 17:00</th>
-          <td colspan="2">休憩</td>
-        </tr>
-
-        <tr>
-          <th>17:00 ~ 17:45</th>
-          <td>
-            FOLIO のマイクロサービス in Action
-            <br>村上拓也 (むらみん)
-          </td>
-          <td>
-            Scala における Monad って何だろう？
-            <br>Naoki Aoyama (aoiroaoino)
-          </td>
-        </tr>
-        <tr>
-          <th>17:45 ~ 18:00</th>
-          <td colspan="2">クロージング</td>
-        </tr>
-
-      </table>
+      <div class="time-table">
+        <div class="track">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2" class="track-1">トラック1</th>
+                <th class="space"></th>
+                <th colspan="2" class="track-2">トラック2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="session">
+                <th class="track-1">12:50</th>
+                <td class="track-1">オープニング</td>
+                <th class="space"></th>
+                <th class="track-2">12:50</th>
+                <td class="track-2">オープニング</td>
+              </tr>
+              <tr class="break">
+                <th class="track-1"></th>
+                <td class="track-1"></td>
+                <th class="space"></th>
+                <th class="track-2"></th>
+                <td class="track-2"></td>
+              </tr>
+              <tr class="session">
+                <th class="track-1">13:00</th>
+                <td class="track-1">
+                  <div>
+                    <h5><a href="./sessions.html#%E4%B8%AD%E6%9D%91%20%E5%AD%A6(%E3%81%8C%E3%81%8F%E3%81%9E)">Path dependent types を利用した軽量Clean Architecture の紹介</a></h5>
+                    <p><i class="fas fa-microphone"></i> 中村 学(がくぞ)</p>
+                  </div>
+                </td>
+                <th class="space"></th>
+                <th class="track-2" rowspan="3">13:00</th>
+                <td class="track-2" rowspan="3">
+                  <div>
+                    <h5><a href="./sessions.html#%E6%BF%B1%E5%B4%8E%20%E4%BF%8A">ゼロから始めるScala文法 (再) + 関数プログラミングことはじめ (再) ハンズオン</a></h5>
+                    <p><i class="fas fa-microphone"></i> 濱崎 俊</p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="break">
+                <th class="track-1">13:45</th>
+                <td class="track-1">
+                  休憩 (15分)
+                </td>
+                <th class="space"></th>
+              </tr>
+              <tr class="session">
+                <th class="track-1">14:00</th>
+                <td class="track-1">
+                  <div>
+                    <h5><a href="./sessions.html#%E3%83%AA%E3%83%81%E3%83%A3%E3%83%BC%E3%83%89%20%E4%BC%8A%E7%9C%9F%E5%B2%A1">Java 5.0時代の非同期処理技術から学び直すScala/Java非同期処理</a></h5>
+                    <p><i class="fas fa-microphone"></i> リチャード 伊真岡</p>
+                  </div>
+                </td>
+                <th class="space"></th>
+              </tr>
+              <tr class="break">
+                <th class="track-1">14:45</th>
+                <td class="track-1">
+                  休憩 (15分)
+                </td>
+                <th class="space"></th>
+                <th class="track-2">14:45</th>
+                <td class="track-2">
+                  休憩 (15分)
+                </td>
+              </tr>
+              <tr class="session">
+                <th class="track-1">15:00</th>
+                <td class="track-1">
+                  <div>
+                    <h5><a href="./sessions.html#%E5%8B%9D%E9%87%8E%20%E5%BE%B3">Chatworkでリアクション機能をリリースした話</a></h5>
+                    <p><i class="fas fa-microphone"></i> 勝野 徳</p>
+                  </div>
+                </td>
+                <th class="space"></th>
+                <th class="track-2">15:00</th>
+                <td class="track-2">
+                  <div>
+                    <h5><a href="./sessions.html#%E3%82%88%E3%81%97%E3%81%A0">Scala.jsでGoogle Cloud Functionsを利用する前に知りたかったこと</a></h5>
+                    <p><i class="fas fa-microphone"></i> よしだ</p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="break">
+                <th class="track-1">15:45</th>
+                <td class="track-1">
+                  休憩 (15分)
+                </td>
+                <th class="space"></th>
+                <th class="track-2">15:45</th>
+                <td class="track-2">
+                  休憩 (15分)
+                </td>
+              </tr>
+              <tr class="session">
+                <th class="track-1">16:00</th>
+                <td class="track-1">
+                  <div>
+                    <h5><a href="./sessions.html#%E8%8B%A5%E6%9D%BE%20%E6%85%B6%E4%BF%A1">資産運用スタートアップの開発で採用した、PlayによるClean Arcitectureでの設計・開発事例</a></h5>
+                    <p><i class="fas fa-microphone"></i> 若松 慶信</p>
+                  </div>
+                </td>
+                <th class="space"></th>
+                <th class="track-2">16:00</th>
+                <td class="track-2">
+                  <div>
+                    <h5><a href="./sessions.html#%E8%B0%B7%E5%8F%A3%20%E6%85%B6%E4%B8%80%E9%83%8E">Scalaで圏論ﾁｮｯﾄ学ぶ</a></h5>
+                    <p><i class="fas fa-microphone"></i> 谷口 慶一郎</p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="break">
+                <th class="track-1">16:45</th>
+                <td class="track-1">
+                  休憩 (15分)
+                </td>
+                <th class="space"></th>
+                <th class="track-2">16:45</th>
+                <td class="track-2">
+                  休憩 (15分)
+                </td>
+              </tr>
+              <tr class="session">
+                <th class="track-1">17:00</th>
+                <td class="track-1">
+                  <div>
+                    <h5><a href="./sessions.html#%E6%9D%91%E4%B8%8A%E6%8B%93%E4%B9%9F%20(%E3%82%80%E3%82%89%E3%81%BF%E3%82%93)">FOLIO のマイクロサービス in Action</a></h5>
+                    <p><i class="fas fa-microphone"></i> 村上拓也 (むらみん)</p>
+                  </div>
+                </td>
+                <th class="space"></th>
+                <th class="track-2">17:00</th>
+                <td class="track-2">
+                  <div>
+                    <h5><a href="./sessions.html#Naoki%20Aoyama%20(aoiroaoino)">Scala における Monad って何だろう？</a></h5>
+                    <p><i class="fas fa-microphone"></i> Naoki Aoyama (aoiroaoino)</p>
+                  </div>
+                </td>
+              </tr>
+              <tr class="break">
+                <th class="track-1"></th>
+                <td class="track-1"></td>
+                <th class="space"></th>
+                <th class="track-2"></th>
+                <td class="track-2"></td>
+              </tr>
+              <tr class="session">
+                <th class="track-1">17:45</th>
+                <td class="track-1">
+                  <div>
+                    <h5>クロージング</h5>
+                    <p></p>
+                  </div>
+                </td>
+                <th class="space"></th>
+                <th class="track-2">17:45</th>
+                <td class="track-2">
+                  <div>
+                    <h5>クロージング</h5>
+                    <p></p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </article>
 
     <article class="location">
